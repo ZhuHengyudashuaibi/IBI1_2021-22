@@ -1,0 +1,13 @@
+#         Adding numbers
+#         How many numbers have been added?
+#                   if numbers less than 10
+#                       n=n+1;keep adding
+#                   if numbers equals to 10
+#                       print out the sum! done!
+
+a=1 #initial number
+sum=0  #store the sum
+for i in range(0,11):  #repeat for 10 times.
+    sum=sum + a
+    a=a+1
+print(sum)
