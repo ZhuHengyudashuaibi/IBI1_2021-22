@@ -1,0 +1,1 @@
+This practical is terribly hard for me! It nearly drives me crazy! I just can't deal with that damn "git push" and "git clone" command! Everytime when I try to clone or push something, fatals always block my way. Luckily I solve it finally.
