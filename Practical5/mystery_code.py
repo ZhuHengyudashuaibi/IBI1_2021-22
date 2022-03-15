@@ -1,5 +1,5 @@
-# What does this piece of code do?
-# Answer: out put 10 random numbers between 1 to 100.
+k# What does this piece of code do?
+# Answer: output one random number between 1 and 100 (after repeat for 10 times).
 
 # Import libraries
 # randint allows drawing a random number,
