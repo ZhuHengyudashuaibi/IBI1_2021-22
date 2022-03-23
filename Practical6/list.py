@@ -4,14 +4,17 @@ import matplotlib.pyplot as plt #import
 marks=[45,36,86,57,53,92,65,45] #input the data
 print(sorted(marks)) #print sorted marks
 
-width=0.35   #width of the bars
-ind=np.arange(len(marks))    #set x axis index
-plt.bar(ind,marks,width)     #create the bar
-plt.xlabel("Practical")      #set x lable
-plt.ylabel("Marks")          #set y lable
-plt.title("Mark distribution of Rob's eight practical session")   #set the title
-plt.yticks(np.arange(0,100,10))                   #set the range of y axis
-plt.show() #print out the plot
+plt.boxplot(marks,                #draw a boxplot
+            notch=False,
+            whis=1.3,
+            patch_artist=True,
+            showcaps=True,
+            showfliers=True,
+            showbox=True)
+plt.ylabel("marks")          #set y label
+plt.title("Rob's ICA marks")   #set title
+plt.ylim([40,100])       #set  y limit
+plt.show()          #printout the plot
 
 ava=np.average(marks)  #evaluate the average marks
 if ava>=60:            #if the average value is greater than 60
