@@ -1,0 +1,10 @@
+My question is: Plot the total number of COVID cases over time in all three.
+
+The correlating code in covid.py is from line 49 to line 78
+
+Discussion:
+The result is as expected. The lines of the total COVID cases versus time in three countries were made by plt.plot function. The blue line represents total COVID case for South_Korea,
+while the red line is for Kenya and the green line is for Colombia. From the lines, it can be concluded that among the countries, the COVID case first occured in South Korea, which
+also has the most cases at the last of March. Colombia was the second country that discovered COVID case and it's case number is greater than Kenya at the last of March.
+However, this line is just the case from 2019/12/3 to 2020/3/31, so it can't reflect the entire situation of the COVID case in three countries. But still, it can offer a reference for the analyze 
+of Global epidemic situation.
