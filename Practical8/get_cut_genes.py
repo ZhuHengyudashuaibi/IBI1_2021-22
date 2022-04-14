@@ -41,7 +41,7 @@ for i in range(len(seq)):
         length.append('*')
 # simplify
 for q in range(len(info)):
-    info[q] = ''.join(re.findall(r'^>(.+)?_mRNA', info[q]))
+    info[q] = ''.join(re.findall(r'gene:([A-Z0-9]+)', info[q]))
 #gene_name + gene_length
 name_len=[]
 for q in range(len(info)):
@@ -60,3 +60,5 @@ keys=list(output.keys())
 for j in range(len(output)):
     otfile.write('>'+keys[j]+'\n')
     otfile.write(output[keys[j]]+'\n')
+
+
