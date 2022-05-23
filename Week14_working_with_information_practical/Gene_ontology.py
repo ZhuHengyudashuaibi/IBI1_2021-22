@@ -84,7 +84,8 @@ class GOHandler_with_translation(xml.sax.ContentHandler):
             if self.wetherterm == True:
                 self.contents.append(content)
                 self.defstr = ''.join(self.contents)
-                if ('translation' in self.defstr) == False and (self.id in With_translation_list):
+                whethertrans= ("translation" in self.defstr) or ("Translation" in self.defstr)
+                if whethertrans == False and (self.id in With_translation_list):
                     With_translation_list.remove(self.id)
 
 parser=xml.sax.make_parser()
@@ -105,7 +106,6 @@ parser.parse('go_obo.xml')
 for key,value in GO_dict.items():
     for every_is_a in value:
         GO_dict_parent[every_is_a].append(key)
-print(GO_dict_parent)
 #Find the number of parentnodes
     #get root
     #get parent nodes
@@ -172,7 +172,7 @@ for everyid in With_translation_list:
     if everyid in node_record:
         node_record_withtranslation[everyid]=node_record[everyid]
         loading2+=1
-        print(f'{everyid}: {node_record[everyid]} ****loading ({loading2}/296)')
+        print(f'{everyid}: {node_record[everyid]} ****loading ({loading2}/301)')
 #Make boxplot for all terms
 def makeboxplot(dict,title):
     node_count=[]
@@ -206,5 +206,5 @@ print('Maximum nodes in terms with translation ',np.max(list(node_record_withtra
 print('Average nodes in terms with translation',np.mean(list(node_record_withtranslation.values())))
 #Comment:
 #"Translation" terms contain a greater number of child nodes than the overall gene ontology on average.
-#The average number of childnodes of "translation" terms is 13.49, while the average number of all terms is 12.08.
+#The average number of childnodes of "translation" terms is 13.30, while the average number of all terms is 12.08.
 
