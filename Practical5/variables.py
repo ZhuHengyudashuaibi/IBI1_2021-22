@@ -10,6 +10,6 @@ print("e=",e)
 print("d>e",f)  #d<e
 print("Rate of 2020 is greater", h)     #Rate in 2020 is larger
 #Booleans
-X="Hello"; Y="World"
-W=X or Y
+X=True; Y=False
+W=X and Y
 print(W)
