@@ -92,5 +92,8 @@ print('Random_seq',Random_seq)
 print('Identity',identity_mousevsrandom)
 
 #Summary:
-#The identity of human DLX5 and mouse DLX5 is 96.54%,while the identity against random sequence is 2.77% and 3.11% respectively. This result shows a significant
-#evolutional homologous of human and murine DLX5.
+#The alignment score of human DLX5 vs murine DLX5 is 1490.
+#The alignment score of human DLX5 vs random is -351.
+#The alignment score of murine DLX5 vs random is -348.
+#The identity of human DLX5 and mouse DLX5 is 96.54%,while the identity against random sequence is 2.77% and 3.11% respectively.
+#This result shows a significant evolutional homologous of human and murine DLX5.
