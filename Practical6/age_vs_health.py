@@ -7,6 +7,10 @@ vs=dict(zip(paternal_age,chd))  #This code was obtained from https://blog.csdn.n
 print(vs)                       #print the dictionary.
 
 plt.scatter(paternal_age,chd,marker='o')  #output the plot.
+plt.xlabel('paternal_age')
+plt.ylabel('chd')
+plt.title('Parent_age vs chd')
+
 plt.show() #print out the plot
 
 age=30 #creat a variable that stores the input age, for example, 30.
