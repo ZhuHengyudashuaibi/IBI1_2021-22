@@ -1,11 +1,9 @@
-1. In the formative task, I didn't follow the instructions in some points. For example, in week 5 I lost 3 points because I didn't set X and Y variables as booleans.
-   
-In the summative portfolio, I strictly checked whether I have achived all the requirements.
+1. In Practical4, I add a document  to introduce myself.
 
-2. In the formative task, I didn't check whether the result of my program is correct. For example, in week 5 I didn't check the number of cuts required for 64 silices so I lost 3 points.
-   
-In the summative portfolio, I strictly checked the results of my program and ensured they were correct.
+2. In week 5. I edit the variable type of X and Y as boolean.
 
-3. In the formative task, I didn't check whether all the required variable was created so I lost 1 point in week6. 
+3. In week5, I move n+=1 to the start of the while loop to fix the mistake that n should be 11.
 
-In the summative portfolio, I strictly check all the variables and make sure none of the required variables is included.
+4. In week6, I add x and y lables for the plot.
+
+All the changed are made according to the feedback I got and could be tracted in git commits.
