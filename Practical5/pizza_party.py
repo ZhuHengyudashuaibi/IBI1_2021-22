@@ -10,11 +10,12 @@
 n=0
 p=1
 cuts=""
-while p<=64:
+while p<= 64:
+    n = n + 1
     p= (n**2+n+2)/2
-    n+=1
     cuts=cuts+str(n)+","   #out put numbers of cut into a sentence
-print(cuts)
+
+print(n)
  
 
 
